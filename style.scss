@@ -1,0 +1,561 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family:monospace;
+	font-weight: 900;
+	
+  
+  }
+  
+  
+  
+  header{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 50px;
+  overflow: hidden;
+  background: #F4F2FF;
+
+  }
+  
+  
+  
+  .navbar{
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	nav{
+	  width: 100%;
+	  height: 80px;
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	  .logo{
+  
+		font-size: 30px;
+		span{
+		  color:#73CDFF;
+  
+		}
+	  }
+	  .nav-list{
+		display: flex;
+	  }
+	  li{
+	   margin: 0 20px;
+	   list-style: none;
+	   a{
+		 color: black;
+	   }
+	  }
+	}
+  
+  .header-main-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 50px;
+  
+	.header-title-box{
+	  font-size: 30px;
+	  span{
+		color:#73CDFF;
+  
+	  }
+	 
+	}
+	p{
+	  font-size: 20px;
+	  margin: 20px 0;
+	}
+	a{
+	  color: #73CDFF;
+	  font-size: 20px;
+	  border: 1px solid #73CDFF;
+	  width: 230px;
+	 padding: 10px 30px;
+	 text-decoration: none;
+	 margin: 20px 0;
+  
+	}
+  }
+  
+  .content-wrapper{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 250px 250px;
+	grid-template-rows:100px 100px;
+	grid-gap: 30px 100px ;
+	p{
+	  font-size: 20px;
+	  font-weight: 900;
+	}
+  }
+  
+  }
+  
+  
+  .header-img-container {
+	grid-area: img;
+	width: 906px;
+height: 717px;
+	position: relative;
+img{
+	position:absolute;
+&:nth-child(1){
+	z-index: 1;
+	position: absolute;
+width: 906px;
+height: 717px;
+transform: rotate(-1deg);
+right: -160px;
+	
+}
+&:nth-child(2){
+	transform: rotate(-1deg);
+	z-index: 2;
+	width: 736px;
+height:690px;
+right: -50px;
+}
+&:nth-child(3){
+	z-index: 3;
+	position: absolute;
+	width: 716px;
+	height: 617px;
+	right: -100px;
+}
+}
+
+
+}
+  
+  .header-main-content{
+  
+	grid-area:main-content;
+  
+  }
+  
+  
+  // main container1
+  
+  .main-container1{
+	width: 100%;
+	height: 140vh;
+	display:flex;
+	flex-wrap: wrap;
+  
+	
+	.img-box{
+	  width: 50%;
+	  height: 60%;
+	  display: flex;
+	  justify-content: center;
+	  .teal-fon{
+		width: 350px;
+		height: 100%;
+	  background: #73CDFF66;
+	  display: flex;
+	  align-items: center;
+	  img:nth-child(1){
+		width: 500px;
+		position: absolute;
+		left: 130px;
+  
+	  }
+
+	  img:nth-child(2){
+		width:20px;
+		position: relative;
+		top: 150px;
+		right: -20px;
+		
+  
+	  }
+
+	  img:nth-child(3){
+		width: 30px;
+		position: relative;
+		top: 160px;
+		right: -40px;
+		
+		
+  
+	  }
+
+	  img:nth-child(4){
+		width: 20px;
+		position: relative;
+		top: 100px;
+		right: -80px;
+		z-index: 1111;
+  
+	  }
+	 
+	  img:nth-child(5){
+		width: 50px;
+		position: relative;
+		top: 120px;
+		right: -90px;
+  
+	  }
+
+	  img:nth-child(6){
+		width: 30px;
+		position: relative;
+		top: 110px;
+		right: -180px;
+  
+	  }
+
+	  img:nth-child(7){
+		width: 30px;
+		position: relative;
+		top: 190px;
+		right: -150px;
+  
+	  }
+
+	  img:nth-child(8){
+		width: 20px;
+		position: relative;
+		top: 200px;
+		right: -80px;
+  
+	  }
+
+
+
+
+	  
+  
+	  }
+	}
+  
+  .text-container{ 
+	width: 50%;
+	  height: 60%;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+  
+	.content-wrapper{
+	display: grid;
+	grid-template-columns: 250px 250px;
+	grid-template-rows:100px 100px;
+	grid-gap: 50px 50px ;
+	justify-content: center;
+	align-items: center;
+	h1{
+	  grid-column: 1 / span 2;
+	  text-align: right;
+	  font-size: 40px;
+	}
+	p{
+   
+	  font-size: 20px;
+	  font-weight: 900;
+	  text-align: right;
+	  a{
+		display: block;
+	  }
+	  &:nth-child(6){
+		grid-column: 1 / span 2;
+		position: relative;
+	  
+	  }
+	}
+	
+  }
+   
+  
+  }
+  
+  .sertfikats{
+  width: 100%;
+  height: 40%;
+  background: #F4F2FF;
+
+	
+	h1{
+		text-align: center;
+		padding: 20px 0;
+	}
+	.sertfikats-container{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+.sertfikats-box{
+	width: 200px;
+	height: 300px;
+	margin: 0 30px;
+}
+	}
+  }
+  
+  }
+  
+//  main2 
+
+.main-container2{
+	width: 100%;
+	height: 100%;
+  
+  h1{
+    text-align: center;
+  }
+
+  .wrapper{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    .text-box{
+      width: 50%;
+      height: 352px;
+      background-color: red;
+      h1{
+        text-align:left;
+        margin: 0 150px;
+        font-size: 25px;
+      }
+      p{
+        padding: 20px 150px;
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+
+    .img-box{
+      width: 50%;
+      height: 352px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .teal-fon{
+        width: 200px;
+        height: 500px;
+        position: absolute;
+        background-color: coral;
+      top: -130px;
+      }
+    }
+.text-box, .img-box{
+  margin:100px 0;
+}
+
+  }
+
+
+}
+
+
+// main3
+
+.main-container3{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    position:relative ;
+    bottom: 80px;
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: #FAFAFA;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+  
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 80%;
+  font-size: 20px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+}
+
+
+.main-container4{
+  width: 100%;
+  height: 70vh;
+  margin: 0 0 100px 0;
+  h1{
+    text-align: center;
+    
+  }
+  .card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before{
+      content: "";
+      width: 100%;
+      height: 200px;
+      background: #C7EBFF;
+      z-index: -1;
+      position: absolute;
+      top: 200px;
+      
+
+    }
+    .card-box{
+      width:400px ;
+      height: 400px;
+      z-index: 100;
+      position: relative;
+      margin: 0 30px;
+      h1{
+        text-align: left;
+        font-size: 100px;
+      color: #73CDFF;
+
+      }
+      .card-text{
+        width: 100%;
+        height: 80%;
+        top: 70px;
+        position: absolute;
+        z-index: 1000;
+        padding: 20px;
+        background: #FFFFFF;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+        h1{
+          font-size: 25px;
+          color: black;
+          padding: 20px 0;
+        }
+        p{
+          text-align: left;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  color: white;
+  background: #003293;
+
+width: 100%;
+height: 60vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+.form-container{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    h1{
+      margin: 20px 0;
+      font-size: 25px;
+    }
+    input, button{
+      width: 100%;
+      padding: 15px 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    button{
+      background: #73CDFF;
+        color: white;
+    }
+    
+  }
+}
+
+.footer-content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  h1,p{
+    
+    width: 600px;
+    padding: 20px 0;
+  }
+h1{
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+}
+
+
+}
